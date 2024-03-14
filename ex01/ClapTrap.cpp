@@ -1,6 +1,6 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(100), _energyPoints(50), _attackDamage(20)
 {
     std::cout << "ClapTrap Constructor called for " << _name << std::endl;
     return ;
@@ -60,10 +60,10 @@ void ClapTrap::beRepaired(unsigned int amount)
     if (_hitPoints < 1 || _energyPoints < 1)
     {
         std::cout << "ClapTrap " << _name << " is not able to repair itself!" << std::endl;
-        return ; 
+        return ;
     }
     std::cout << "ClapTrap " << _name << " repaired " << amount << " hit points!" << std::endl;
-    _hitPoints += amount; 
+    _hitPoints += amount;
     _energyPoints--;
-    return ; 
+    return ;
 }

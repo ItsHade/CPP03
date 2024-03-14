@@ -1,17 +1,10 @@
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main(void)
 {
-    ClapTrap josh("Josh");
+    ScavTrap joshua("Joshua");
 
-    josh.attack("enemy lvl 1");
-    josh.takeDamage(3);
-    josh.beRepaired(10);
-    
-    josh.takeDamage(30);
-    josh.attack("enemy lvl 1");
-    josh.takeDamage(1);
-    
+	joshua.attack("yohan");
 
     return (0);
 }
