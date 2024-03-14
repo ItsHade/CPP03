@@ -2,7 +2,7 @@ SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = scavtrap
+NAME = ScavTrap
 
 CC = c++
 

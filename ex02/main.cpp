@@ -1,11 +1,12 @@
+#include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
 int main(void)
 {
-    ScavTrap john("john");
+    FragTrap john("john");
 
 	john.attack("lua");
-    john.guardGate();
+    john.highFivesGuys();
 
     return (0);
 }
